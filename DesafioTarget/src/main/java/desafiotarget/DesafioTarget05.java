@@ -1,6 +1,5 @@
 package desafiotarget;
 
-import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,16 +16,12 @@ public class DesafioTarget05 {
         int n = 0;
         StringBuilder g = new StringBuilder();
                            
-        for(int i=k-1; i>=0; i--)
-        {           
-           
-            f[n] = nFrase[i];
-            n++;                                          
+            for(int i=k-1; i>=0; i--)
+            {            
+                 f[n] = nFrase[i];
+                 n++;                        
                                     
-        }       
-         
-        JOptionPane.showMessageDialog(null,"Frase invertida: " + g.append(f)); 
-                
+             }             
+        JOptionPane.showMessageDialog(null,"Frase invertida: " + g.append(f));                
     }
-    
 }
